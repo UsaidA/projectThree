@@ -20,8 +20,8 @@ public class Main {
     public static void main(String[] args) {
 
         String[] jobDesc = {"EEE","GGG","CCC","DDD","BBB","FFF","AAA"};
-        int[] priority = {4,5,2,4,2,4,1};
-        //int [] priority = {4,5,6,6,6,9,3};
+        int[] priority = {4,5,2,4,2,4,1,1,1};
+
         int node = 2;
 
 
@@ -44,29 +44,15 @@ public class Main {
                heap[node] = priority[y];
            }
            node = node +1;
-            /*if (heap[node] > heap[getParentIndex(node)]){
-                int temp = heap[node];
-                heap[node] = heap[getParentIndex(node)];
-                heap[getParentIndex(node)] = temp;
-
-
-            }
-            else{
-                heap[node] = priority[y];
-                node = node +1;
-            }
-            */
+          
         }
 
         //System.out.println((heap[getParentIndex(5)]));
         //System.out.println(node);
-        System.out.println( heap[1]);
-        System.out.println( heap[2]);
-        System.out.println( heap[3]);
-        System.out.println( heap[4]);
-        System.out.println( heap[5]);
-        System.out.println( heap[6]);
-        System.out.println( heap[7]);
+        for(int x = 1 ; x < components+ 1; x ++){
+            System.out.println(heap[x]);
+        }
+
         //System.out.println( heap[8]);
 
 
